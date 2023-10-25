@@ -1,0 +1,105 @@
+body{
+    font-family: 'Bahnschrift Light', Arial, sans-serif;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: calc(15px + (10 + 10 * 0.7) * ((100vw - 320px) / 1280));
+    font-family: 'Segoe Print', sans-serif;
+    max-height: 100px;
+}
+
+.head_div{
+    display: flex;
+    justify-content: center;
+    padding: 0% 5%;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: bottom;
+    background-image: linear-gradient(to bottom, rgba(54, 54, 54, 0.7), rgba(31, 31, 31, 0.7)), url("https://teenslive.info/wp-content/uploads/john-schnobrich-520023-unsplash-930x615.jpg");
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+.container2 > div{
+    width: 70%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: rgba(104, 106, 109, 0.2) 0px 8px 24px;
+    margin: 30px;
+    background-color: rgba(47, 77, 81, 0.162);
+}
+.container2 > div:hover{
+    box-shadow: rgb(104, 106, 109) 0px 8px 24px;
+}
+.container2 > div > h3{
+    color: rgb(24, 38, 40);
+}
+.conetiner_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    --color: rgb(47, 77, 81);
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   .button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .button:hover {
+    color: #fff;
+   }
+   
+   .button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+   #a{
+    color: black;
+   }
+   #a:hover{
+    color: white;
+   }
